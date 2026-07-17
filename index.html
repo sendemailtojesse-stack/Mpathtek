@@ -31,22 +31,22 @@
         }
         .img-wrapper {
             position: relative;
-            display: inline-block;
+            display: block;
             line-height: 0;
         }
-        .geo-overlay {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 160px;
-            height: 120px;
-            pointer-events: none;
-        }
-        img {
+        .img-wrapper img {
             display: block;
             max-width: 80vw;
             max-height: 76vh;
             object-fit: contain;
+        }
+        .geo-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
         }
         .logo-rule {
             border: none;
@@ -76,41 +76,15 @@
             <tr>
                 <td>
                     <div class="img-wrapper">
-                    <img src="logo.png" alt="mpathtek Logo">
-                    <svg class="geo-overlay" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="fadeOut" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#000000;stop-opacity:0.0"/>
-                                <stop offset="100%" style="stop-color:#000000;stop-opacity:0.55"/>
-                            </linearGradient>
-                            <mask id="cornerMask">
-                                <rect width="160" height="120" fill="url(#fadeOut)"/>
-                            </mask>
-                        </defs>
-                        <!-- Faceted triangular panels echoing the floor tiles -->
-                        <g mask="url(#cornerMask)">
-                            <!-- Row of large triangles -->
-                            <polygon points="160,0 80,0 160,50" fill="rgba(100,140,160,0.45)"/>
-                            <polygon points="80,0 160,50 100,0" fill="rgba(60,100,130,0.50)"/>
-                            <polygon points="160,50 160,100 120,60" fill="rgba(80,120,150,0.48)"/>
-                            <polygon points="120,0 160,0 160,50 120,60" fill="rgba(40,80,110,0.40)"/>
-                            <!-- Mid triangles -->
-                            <polygon points="80,0 120,0 120,60 60,40" fill="rgba(70,110,140,0.35)"/>
-                            <polygon points="60,40 120,60 80,80 40,60" fill="rgba(50,90,120,0.38)"/>
-                            <polygon points="160,100 160,120 100,120 80,80" fill="rgba(90,130,155,0.42)"/>
-                            <polygon points="80,80 100,120 40,120 20,90" fill="rgba(55,95,125,0.36)"/>
-                            <!-- Smaller accent triangles top-right -->
-                            <polygon points="130,0 160,0 160,30" fill="rgba(120,170,200,0.30)"/>
-                            <polygon points="160,30 160,60 140,45" fill="rgba(100,150,180,0.35)"/>
-                            <!-- Fine edge lines -->
-                            <line x1="80" y1="0" x2="160" y2="50" stroke="rgba(150,200,220,0.60)" stroke-width="1"/>
-                            <line x1="120" y1="0" x2="120" y2="60" stroke="rgba(150,200,220,0.55)" stroke-width="1"/>
-                            <line x1="160" y1="50" x2="80" y2="80" stroke="rgba(150,200,220,0.55)" stroke-width="1"/>
-                            <line x1="60" y1="40" x2="160" y2="100" stroke="rgba(150,200,220,0.45)" stroke-width="1"/>
-                            <line x1="40" y1="60" x2="160" y2="120" stroke="rgba(150,200,220,0.40)" stroke-width="1"/>
-                            <line x1="100" y1="0" x2="20" y2="90" stroke="rgba(150,200,220,0.35)" stroke-width="1"/>
-                        </g>
-                    </svg>
+                        <img src="logo.png" alt="mpathtek Logo">
+                        <svg class="geo-overlay" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="100,0 55,0 100,35" fill="rgba(80,140,180,0.38)" stroke="rgba(140,210,250,0.65)" stroke-width="0.3"/>
+                            <polygon points="55,0 75,0 100,18 100,35 72,22" fill="rgba(50,110,155,0.32)" stroke="rgba(130,200,240,0.55)" stroke-width="0.3"/>
+                            <polygon points="75,0 100,0 100,18" fill="rgba(110,170,210,0.28)" stroke="rgba(150,215,255,0.60)" stroke-width="0.3"/>
+                            <polygon points="72,22 100,35 100,52 58,38" fill="rgba(60,120,165,0.30)" stroke="rgba(130,200,240,0.50)" stroke-width="0.3"/>
+                            <polygon points="55,0 72,22 58,38 42,28 48,10" fill="rgba(45,100,145,0.24)" stroke="rgba(120,190,230,0.45)" stroke-width="0.3"/>
+                            <polygon points="48,10 42,28 30,24 35,8" fill="rgba(35,90,135,0.18)" stroke="rgba(110,185,225,0.38)" stroke-width="0.3"/>
+                        </svg>
                     </div>
                 </td>
             </tr>
