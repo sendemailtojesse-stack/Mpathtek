@@ -18,30 +18,31 @@
         .outer-wrapper {
             display: inline-block;
         }
-        table.logo-table {
+        table.frame-table {
             border-collapse: collapse;
             border-spacing: 0;
+            background-color: transparent;
+            padding: 0;
+        }
+        table.frame-table td {
+            padding: 0;
+            margin: 0;
+        }
+        td.geo-corner {
+            width: 80px;
+            height: 80px;
+            vertical-align: top;
+        }
+        table.logo-table {
+            border-collapse: separate;
+            border-spacing: 0;
             background-color: #1a1a1a;
+            padding: 6px;
             border-radius: 4px;
         }
-        td.img-cell {
-            padding: 6px;
-            line-height: 0;
-        }
-        td.geo-top-right {
-            width: 80px;
+        table.logo-table td {
             padding: 0;
-            vertical-align: top;
             line-height: 0;
-        }
-        td.geo-bottom-right {
-            padding: 0;
-            vertical-align: bottom;
-            line-height: 0;
-        }
-        td.corner-pad {
-            width: 6px;
-            padding: 0;
         }
         img {
             display: block;
@@ -73,23 +74,37 @@
 </head>
 <body>
     <div class="outer-wrapper">
-        <table class="logo-table">
+        <table class="frame-table">
             <tr>
-                <td class="img-cell" rowspan="2">
-                    <img src="logo.png" alt="mpathtek Logo">
-                </td>
-                <td class="geo-top-right">
+                <td></td>
+                <td></td>
+                <td class="geo-corner">
                     <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="0,0 80,0 80,80" fill="rgba(70,130,170,0.35)" stroke="rgba(130,200,240,0.65)" stroke-width="1"/>
-                        <polygon points="30,0 80,0 80,40" fill="rgba(50,110,155,0.30)" stroke="rgba(120,190,230,0.55)" stroke-width="1"/>
-                        <polygon points="55,0 80,0 80,22" fill="rgba(100,160,200,0.25)" stroke="rgba(150,215,255,0.60)" stroke-width="1"/>
-                        <polygon points="0,0 30,0 80,40 80,80 20,50" fill="rgba(40,95,140,0.22)" stroke="rgba(110,185,225,0.45)" stroke-width="1"/>
-                        <polygon points="0,0 20,50 0,40" fill="rgba(30,85,130,0.18)" stroke="rgba(100,175,215,0.38)" stroke-width="1"/>
+                        <polygon points="80,0 20,0 80,60" fill="rgba(70,130,170,0.40)" stroke="rgba(130,200,240,0.70)" stroke-width="1"/>
+                        <polygon points="45,0 80,0 80,35" fill="rgba(100,160,205,0.32)" stroke="rgba(150,215,255,0.65)" stroke-width="1"/>
+                        <polygon points="65,0 80,0 80,18" fill="rgba(120,175,215,0.26)" stroke="rgba(160,220,255,0.60)" stroke-width="1"/>
+                        <polygon points="20,0 45,0 80,35 80,60 38,40" fill="rgba(45,100,145,0.28)" stroke="rgba(120,190,230,0.50)" stroke-width="1"/>
+                        <polygon points="20,0 38,40 5,28" fill="rgba(30,85,130,0.22)" stroke="rgba(110,180,220,0.42)" stroke-width="1"/>
                     </svg>
                 </td>
             </tr>
             <tr>
-                <td class="corner-pad"></td>
+                <td></td>
+                <td>
+                    <table class="logo-table">
+                        <tr>
+                            <td>
+                                <img src="logo.png" alt="mpathtek Logo">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
         <hr class="logo-rule">
