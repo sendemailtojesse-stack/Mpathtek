@@ -18,21 +18,6 @@
         .outer-wrapper {
             display: inline-block;
         }
-        table.frame-table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            background-color: transparent;
-            padding: 0;
-        }
-        table.frame-table td {
-            padding: 0;
-            margin: 0;
-        }
-        td.geo-corner {
-            width: 160px;
-            height: 160px;
-            vertical-align: top;
-        }
         table.logo-table {
             border-collapse: separate;
             border-spacing: 0;
@@ -50,17 +35,11 @@
             max-height: 76vh;
             object-fit: contain;
         }
-        .bottom-bar {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-        }
         .logo-rule {
             border: none;
             border-top: 1px solid #4a4038;
-            margin: 4px 0 4px 0;
+            margin: 4px 0;
             width: 100%;
-            box-sizing: border-box;
         }
         .logo-link {
             display: block;
@@ -80,41 +59,15 @@
 </head>
 <body>
     <div class="outer-wrapper">
-        <table class="frame-table">
+        <table class="logo-table">
             <tr>
-                <td></td>
-                <td></td>
-                <td class="geo-corner">
-                    <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="160,0 40,0 160,120" fill="rgba(70,130,170,0.20)" stroke="rgba(130,200,240,0.38)" stroke-width="1"/>
-                        <polygon points="90,0 160,0 160,70" fill="rgba(100,160,205,0.16)" stroke="rgba(150,215,255,0.32)" stroke-width="1"/>
-                        <polygon points="130,0 160,0 160,36" fill="rgba(120,175,215,0.13)" stroke="rgba(160,220,255,0.28)" stroke-width="1"/>
-                        <polygon points="40,0 90,0 160,70 160,120 76,80" fill="rgba(45,100,145,0.14)" stroke="rgba(120,190,230,0.26)" stroke-width="1"/>
-                        <polygon points="40,0 76,80 10,56" fill="rgba(30,85,130,0.11)" stroke="rgba(110,180,220,0.22)" stroke-width="1"/>
-                    </svg>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
                 <td>
-                    <table class="logo-table">
-                        <tr>
-                            <td>
-                                <img src="logo.png" alt="mpathtek Logo">
-                            </td>
-                        </tr>
-                    </table>
-                    <hr class="logo-rule">
-                    <a class="logo-link" href="https://dailyhitmetrics.com/" target="_blank" rel="noopener noreferrer">dailyhitmetrics.com</a>
+                    <img src="logo.png" alt="mpathtek Logo">
                 </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
         </table>
+        <hr class="logo-rule">
+        <a class="logo-link" href="https://dailyhitmetrics.com/" target="_blank" rel="noopener noreferrer">dailyhitmetrics.com</a>
     </div>
 </body>
 </html>
