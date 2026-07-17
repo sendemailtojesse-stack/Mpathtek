@@ -28,7 +28,11 @@
         table.logo-table td {
             padding: 0;
             line-height: 0;
+        }
+        .img-wrapper {
             position: relative;
+            display: inline-block;
+            line-height: 0;
         }
         .geo-overlay {
             position: absolute;
@@ -71,6 +75,7 @@
         <table class="logo-table">
             <tr>
                 <td>
+                    <div class="img-wrapper">
                     <img src="logo.png" alt="mpathtek Logo">
                     <svg class="geo-overlay" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -85,27 +90,28 @@
                         <!-- Faceted triangular panels echoing the floor tiles -->
                         <g mask="url(#cornerMask)">
                             <!-- Row of large triangles -->
-                            <polygon points="160,0 80,0 160,50" fill="rgba(100,140,160,0.18)"/>
-                            <polygon points="80,0 160,50 100,0" fill="rgba(60,100,130,0.22)"/>
-                            <polygon points="160,50 160,100 120,60" fill="rgba(80,120,150,0.20)"/>
-                            <polygon points="120,0 160,0 160,50 120,60" fill="rgba(40,80,110,0.15)"/>
+                            <polygon points="160,0 80,0 160,50" fill="rgba(100,140,160,0.45)"/>
+                            <polygon points="80,0 160,50 100,0" fill="rgba(60,100,130,0.50)"/>
+                            <polygon points="160,50 160,100 120,60" fill="rgba(80,120,150,0.48)"/>
+                            <polygon points="120,0 160,0 160,50 120,60" fill="rgba(40,80,110,0.40)"/>
                             <!-- Mid triangles -->
-                            <polygon points="80,0 120,0 120,60 60,40" fill="rgba(70,110,140,0.12)"/>
-                            <polygon points="60,40 120,60 80,80 40,60" fill="rgba(50,90,120,0.16)"/>
-                            <polygon points="160,100 160,120 100,120 80,80" fill="rgba(90,130,155,0.18)"/>
-                            <polygon points="80,80 100,120 40,120 20,90" fill="rgba(55,95,125,0.14)"/>
+                            <polygon points="80,0 120,0 120,60 60,40" fill="rgba(70,110,140,0.35)"/>
+                            <polygon points="60,40 120,60 80,80 40,60" fill="rgba(50,90,120,0.38)"/>
+                            <polygon points="160,100 160,120 100,120 80,80" fill="rgba(90,130,155,0.42)"/>
+                            <polygon points="80,80 100,120 40,120 20,90" fill="rgba(55,95,125,0.36)"/>
                             <!-- Smaller accent triangles top-right -->
-                            <polygon points="130,0 160,0 160,30" fill="rgba(120,170,200,0.10)"/>
-                            <polygon points="160,30 160,60 140,45" fill="rgba(100,150,180,0.12)"/>
+                            <polygon points="130,0 160,0 160,30" fill="rgba(120,170,200,0.30)"/>
+                            <polygon points="160,30 160,60 140,45" fill="rgba(100,150,180,0.35)"/>
                             <!-- Fine edge lines -->
-                            <line x1="80" y1="0" x2="160" y2="50" stroke="rgba(150,200,220,0.18)" stroke-width="0.5"/>
-                            <line x1="120" y1="0" x2="120" y2="60" stroke="rgba(150,200,220,0.14)" stroke-width="0.5"/>
-                            <line x1="160" y1="50" x2="80" y2="80" stroke="rgba(150,200,220,0.16)" stroke-width="0.5"/>
-                            <line x1="60" y1="40" x2="160" y2="100" stroke="rgba(150,200,220,0.12)" stroke-width="0.5"/>
-                            <line x1="40" y1="60" x2="160" y2="120" stroke="rgba(150,200,220,0.10)" stroke-width="0.5"/>
-                            <line x1="100" y1="0" x2="20" y2="90" stroke="rgba(150,200,220,0.08)" stroke-width="0.5"/>
+                            <line x1="80" y1="0" x2="160" y2="50" stroke="rgba(150,200,220,0.60)" stroke-width="1"/>
+                            <line x1="120" y1="0" x2="120" y2="60" stroke="rgba(150,200,220,0.55)" stroke-width="1"/>
+                            <line x1="160" y1="50" x2="80" y2="80" stroke="rgba(150,200,220,0.55)" stroke-width="1"/>
+                            <line x1="60" y1="40" x2="160" y2="100" stroke="rgba(150,200,220,0.45)" stroke-width="1"/>
+                            <line x1="40" y1="60" x2="160" y2="120" stroke="rgba(150,200,220,0.40)" stroke-width="1"/>
+                            <line x1="100" y1="0" x2="20" y2="90" stroke="rgba(150,200,220,0.35)" stroke-width="1"/>
                         </g>
                     </svg>
+                    </div>
                 </td>
             </tr>
         </table>
