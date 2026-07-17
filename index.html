@@ -29,8 +29,8 @@
             margin: 0;
         }
         td.geo-corner {
-            width: 80px;
-            height: 80px;
+            width: 160px;
+            height: 160px;
             vertical-align: top;
         }
         table.logo-table {
@@ -50,11 +50,17 @@
             max-height: 76vh;
             object-fit: contain;
         }
+        .bottom-bar {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
         .logo-rule {
             border: none;
             border-top: 1px solid #4a4038;
-            margin: 4px 0;
+            margin: 4px 0 4px 0;
             width: 100%;
+            box-sizing: border-box;
         }
         .logo-link {
             display: block;
@@ -79,12 +85,12 @@
                 <td></td>
                 <td></td>
                 <td class="geo-corner">
-                    <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="80,0 20,0 80,60" fill="rgba(70,130,170,0.40)" stroke="rgba(130,200,240,0.70)" stroke-width="1"/>
-                        <polygon points="45,0 80,0 80,35" fill="rgba(100,160,205,0.32)" stroke="rgba(150,215,255,0.65)" stroke-width="1"/>
-                        <polygon points="65,0 80,0 80,18" fill="rgba(120,175,215,0.26)" stroke="rgba(160,220,255,0.60)" stroke-width="1"/>
-                        <polygon points="20,0 45,0 80,35 80,60 38,40" fill="rgba(45,100,145,0.28)" stroke="rgba(120,190,230,0.50)" stroke-width="1"/>
-                        <polygon points="20,0 38,40 5,28" fill="rgba(30,85,130,0.22)" stroke="rgba(110,180,220,0.42)" stroke-width="1"/>
+                    <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="160,0 40,0 160,120" fill="rgba(70,130,170,0.20)" stroke="rgba(130,200,240,0.38)" stroke-width="1"/>
+                        <polygon points="90,0 160,0 160,70" fill="rgba(100,160,205,0.16)" stroke="rgba(150,215,255,0.32)" stroke-width="1"/>
+                        <polygon points="130,0 160,0 160,36" fill="rgba(120,175,215,0.13)" stroke="rgba(160,220,255,0.28)" stroke-width="1"/>
+                        <polygon points="40,0 90,0 160,70 160,120 76,80" fill="rgba(45,100,145,0.14)" stroke="rgba(120,190,230,0.26)" stroke-width="1"/>
+                        <polygon points="40,0 76,80 10,56" fill="rgba(30,85,130,0.11)" stroke="rgba(110,180,220,0.22)" stroke-width="1"/>
                     </svg>
                 </td>
             </tr>
@@ -98,6 +104,8 @@
                             </td>
                         </tr>
                     </table>
+                    <hr class="logo-rule">
+                    <a class="logo-link" href="https://dailyhitmetrics.com/" target="_blank" rel="noopener noreferrer">dailyhitmetrics.com</a>
                 </td>
                 <td></td>
             </tr>
@@ -107,8 +115,6 @@
                 <td></td>
             </tr>
         </table>
-        <hr class="logo-rule">
-        <a class="logo-link" href="https://dailyhitmetrics.com/" target="_blank" rel="noopener noreferrer">dailyhitmetrics.com</a>
     </div>
 </body>
 </html>
